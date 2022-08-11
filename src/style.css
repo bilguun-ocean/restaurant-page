@@ -39,3 +39,9 @@ body {
   cursor: pointer;
   background-color: greenyellow;
 }
+
+.header-content {
+  font-size: x-large;
+  padding: 10px;
+  text-align: center;
+}

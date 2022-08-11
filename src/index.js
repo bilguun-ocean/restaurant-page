@@ -15,8 +15,15 @@ function createTabElement(name) {
   return element
 }
 
+// Header 
+
+const header = document.createElement('header')
+header.classList.add('header-content')
+header.textContent =  'Korean Street Food Stalls 포장마차'
+
 tabsContainer.appendChild(createTabElement("Home"))
 tabsContainer.appendChild(createTabElement("Menu"))
 tabsContainer.appendChild(createTabElement("Location"))
 
+mainContainer.appendChild(header)
 mainContainer.appendChild(tabsContainer)
