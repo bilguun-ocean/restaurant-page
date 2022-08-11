@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono','Courier New', Courier, monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url('./seoul-street.jpg');
+  background-size: contain;
+}
+
+.content {
+  opacity: 80%;
+  height: 100%;
+  margin: auto;
+  max-width: 1000px;
+  background-color: rgb(255, 253, 253);
+}
+
+/* TABS */
+.tab-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.tab {
+  /**/
+}
+
+.tab:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
