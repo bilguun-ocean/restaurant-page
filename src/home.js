@@ -1,3 +1,1 @@
-export default function generateHome() {
-  
-}
+"Main Branch"
