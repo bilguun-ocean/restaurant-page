@@ -1,4 +1,5 @@
 import './style.css';
+import Logo from './soju.png'
 
 /* SKELETON */
 
@@ -16,10 +17,15 @@ function createTabElement(name) {
 }
 
 // Header 
-
-const header = document.createElement('header')
+const header = document.createElement('div')
 header.classList.add('header-content')
-header.textContent =  'Korean Street Food Stalls 포장마차'
+const headerText = document.createElement('header')
+headerText.textContent =  '포장마차'
+header.appendChild(headerText)
+const logo = document.createElement('img')
+logo.setAttribute('src', Logo)
+logo.classList.add('logo')
+header.appendChild(logo)
 
 tabsContainer.appendChild(createTabElement("Home"))
 tabsContainer.appendChild(createTabElement("Menu"))
