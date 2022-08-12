@@ -19,7 +19,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  height: 100%;
   margin: auto;
   max-width: 1000px;
   background-color: rgb(255, 253, 253, 0.9);
@@ -53,4 +52,9 @@ body {
   border-radius: 100%;
   transform: rotate(25deg);
   padding: 5px;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
 }

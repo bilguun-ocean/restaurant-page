@@ -31,5 +31,6 @@ tabsContainer.appendChild(createTabElement("Home"))
 tabsContainer.appendChild(createTabElement("Menu"))
 tabsContainer.appendChild(createTabElement("Location"))
 
-mainContainer.appendChild(header)
-mainContainer.appendChild(tabsContainer)
+mainContainer.prepend(tabsContainer)
+mainContainer.prepend(header)
+
