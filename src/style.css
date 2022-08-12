@@ -17,11 +17,10 @@ body {
 }
 
 .content {
-  opacity: 80%;
   height: 100%;
   margin: auto;
   max-width: 1000px;
-  background-color: rgb(255, 253, 253);
+  background-color: rgb(255, 253, 253, 0.9);
 }
 
 /* TABS */
@@ -30,8 +29,6 @@ body {
   justify-content: space-evenly;
   padding: 20px;
 }
-
-
 
 .tab:hover {
   cursor: pointer;
@@ -43,3 +40,4 @@ body {
   padding: 10px;
   text-align: center;
 }
+
