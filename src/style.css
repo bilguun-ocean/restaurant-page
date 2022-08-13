@@ -19,7 +19,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   margin: auto;
   max-width: 1000px;
   background-color: rgb(255, 253, 253, 0.9);
