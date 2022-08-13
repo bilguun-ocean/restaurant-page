@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  min-height: 100%;
   max-width: 1000px;
   background-color: rgb(255, 253, 253, 0.9);
 }
