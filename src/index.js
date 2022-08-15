@@ -38,6 +38,10 @@ logo.setAttribute('src', Logo)
 logo.classList.add('logo')
 header.appendChild(logo)
 
+// Footer 
+const footer = document.createElement('footer')
+footer.textContent = 'bilguun-ocean'
+
 tabsContainer.appendChild(createTabElement("Home"))
 tabsContainer.appendChild(createTabElement("Menu"))
 tabsContainer.appendChild(createTabElement("Location"))
@@ -47,5 +51,7 @@ mainContainer.prepend(header)
 
 generateHome()
 
+
+mainContainer.appendChild(footer)
 
 
