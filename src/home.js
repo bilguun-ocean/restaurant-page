@@ -5,6 +5,7 @@ export default function generateHome() {
   const mainContainer = document.querySelector('.content')
   const container = document.createElement('div')
   container.classList.add('introduction')
+  container.setAttribute('id', 'current-tab')
   // Header Section
   const header = document.createElement('header')
   header.textContent = 'Why Korean Street Food ?'
@@ -28,4 +29,5 @@ export default function generateHome() {
   // container.appendChild(image)
   
   mainContainer.appendChild(container)
+
 }

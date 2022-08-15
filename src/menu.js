@@ -66,6 +66,7 @@ export default function generateMenu() {
   const menuHeader = document.createElement('div')
   const menuContent = document.createElement('div')
   menuContent.classList.add('menu-content')
+  menuContent.setAttribute('id', 'current-tab')
   menuHeader.classList.add('menu-header')
   menuHeader.textContent = 'Menu'
   menuContent.appendChild(menuHeader)
