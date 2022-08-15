@@ -1,8 +1,9 @@
 import './style.css';
 import Logo from './soju.png'
 import generateHome from './home';
-
 /* SKELETON */
+
+// LOGO/HEADING
 
 const mainContainer = document.querySelector('.content');
 
@@ -45,4 +46,6 @@ mainContainer.prepend(tabsContainer)
 mainContainer.prepend(header)
 
 generateHome()
+
+
 
