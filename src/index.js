@@ -16,6 +16,15 @@ function createTabElement(name) {
   return element
 }
 
+// Tab selector 
+
+//if currently on the tab that is being clicked do nothing
+
+//if its another tab than that is being clicked delete the contents
+
+//and generate that tab, and remember it is currently on 
+
+
 // Header 
 const header = document.createElement('div')
 header.classList.add('header-content')
