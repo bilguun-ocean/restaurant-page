@@ -87,4 +87,59 @@ footer {
   font-size: large;
 }
 
+
 /* MENU PAGE */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.menu-header {
+  color: purple;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.menu {
+  background-color: rgb(39, 38, 38);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu .menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-item-image {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.section-header {
+  padding: 3px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  font-size: x-large;
+  background-color: darkorange;
+}
+
+.price {
+  float: right;
+  color: orange;
+}
+
+.item-description {
+  width: 50%;
+}
+
