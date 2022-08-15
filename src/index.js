@@ -1,5 +1,6 @@
 import './style.css';
 import Logo from './soju.png'
+import generateHome from './home';
 
 /* SKELETON */
 
@@ -42,4 +43,6 @@ tabsContainer.appendChild(createTabElement("Location"))
 
 mainContainer.prepend(tabsContainer)
 mainContainer.prepend(header)
+
+generateHome()
 
