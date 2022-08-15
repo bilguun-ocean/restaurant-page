@@ -1,6 +1,7 @@
 import './style.css';
 import Logo from './soju.png'
 import generateHome from './home';
+import generateMenu from './menu';
 /* SKELETON */
 
 // LOGO/HEADING
@@ -49,7 +50,8 @@ tabsContainer.appendChild(createTabElement("Location"))
 mainContainer.prepend(tabsContainer)
 mainContainer.prepend(header)
 
-generateHome()
+// generateHome()
+generateMenu()
 
 
 mainContainer.appendChild(footer)
