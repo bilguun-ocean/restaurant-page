@@ -2,6 +2,7 @@ import './style.css';
 import Logo from './soju.png'
 import generateHome from './home';
 import generateMenu from './menu';
+import generateLocation from './location';
 /* SKELETON */
 
 // LOGO/HEADING
@@ -33,7 +34,17 @@ header.appendChild(logo)
 
 // Footer 
 const footer = document.createElement('footer')
-footer.textContent = 'bilguun-ocean'
+footer.textContent = 'by '
+
+const gitLink = document.createElement('a')
+gitLink.setAttribute('href', 'https://github.com/bilguun-ocean')
+gitLink.textContent = 'bilguun-ocean'
+
+footer.appendChild(gitLink)
+
+
+
+// Adding tab section
 
 const tabHome = createTabElement("Home")
 const tabMenu = createTabElement("Menu")
@@ -46,8 +57,6 @@ tabsContainer.appendChild(tabLoc)
 mainContainer.prepend(tabsContainer)
 mainContainer.prepend(header)
 
-// generateHome()
-// generateMenu()
 
 function deletePage() {
   const displayedTab =  document.querySelector('#current-tab')
@@ -56,29 +65,34 @@ function deletePage() {
 
 }
 
+function addFooter() {
+  mainContainer.appendChild(footer)
+}
 
+let current_tab = ''
 
 function selectTab(tabName) {
   console.log(`Selected Tab: ${tabName.id}`)
+  if (current_tab == tabName.id)
+    return
+  current_tab = tabName.id
   deletePage()
   // deletePage()
   if (tabName.id == 'home'){
     generateHome()
+    addFooter()
   }
 
   else if (tabName.id == 'menu'){
     generateMenu()
+    addFooter()
   }
-  else
-    generateLoc()
+  else {
+    generateLocation()
+    addFooter()
+  }
 }
 
-
-
-// Tab selector
-// const 
-// as starting tab  
-// generateHome()
 
 tabHome.addEventListener('click', ()=> {
   selectTab(tabHome)
@@ -90,13 +104,7 @@ tabLoc.addEventListener('click', ()=> {
   selectTab(tabLoc)
 })
 
-//if currently on the tab that is being clicked do nothing
+// Starting on Home Page
 
-//if its another tab than that is being clicked delete the contents
-
-//and generate that tab, and remember it is currently on 
-
-mainContainer.appendChild(footer)
-
-
+selectTab(tabHome)
 

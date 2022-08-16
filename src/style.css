@@ -1,4 +1,9 @@
+/* --header */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400&display=swap');
+
+:root {
+  --header: 2em;
+}
 
 * {
   padding: 0px;
@@ -31,16 +36,26 @@ body {
 .tab-container {
   display: flex;
   justify-content: space-evenly;
+  height: 100%;
   padding: 20px;
 }
 
 .tab:hover {
   cursor: pointer;
-  background-color: greenyellow;
+  border-bottom: 3px solid green;
+  transition: 0.3s;
+}
+
+.tab {
+  height: 30px;
+}
+
+.current-tab {
+  border-bottom: 3px solid green;
 }
 
 .header-content {
-  color: purple;
+  color: rebeccapurple;
   display: flex;
   font-size: 2.5em;
   padding: 10px;
@@ -75,7 +90,7 @@ footer {
 .header {
   text-align: center;
   color: rebeccapurple;
-  font-size: xx-large;
+  font-size: var(--header);
 }
 
 /* .food-image {
@@ -96,8 +111,8 @@ footer {
 }
 
 .menu-header {
-  color: purple;
-  font-size: 4em;
+  color: rebeccapurple;
+  font-size: 3.5em;
 }
 
 .menu {
@@ -142,3 +157,24 @@ footer {
   width: 50%;
 }
 
+.google-map {
+  margin: auto;
+  max-width: 80%;
+  width: 500px;
+  height: 50vh;
+}
+
+.location-text {
+  text-align: center;
+  padding: 1em;
+}
+
+.menu-content.location-container {
+  padding: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+
+}

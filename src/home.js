@@ -15,7 +15,7 @@ export default function generateHome() {
   // Intro-text Section
   const introText = document.createElement('div')
   introText.textContent = "Experience real authentic korean street foods" + 
-                             "at these stalls! Quick and affordable, sweet and savory"
+                             " at these stalls! Quick and affordable, sweet and savory"
                               + ", filling and warming on cold days, these street foods are the real comfort-food!"
   introText.classList.add('introduction-text')
   container.appendChild(introText)
