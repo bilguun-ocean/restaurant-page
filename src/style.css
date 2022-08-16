@@ -58,7 +58,6 @@ body {
   color: rebeccapurple;
   display: flex;
   font-size: 2.5em;
-  padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -75,6 +74,7 @@ body {
 footer {
   margin-top: auto;
   text-align: center;
+  padding-bottom: 5px;
 }
  /* HOME PAGE */
 
@@ -112,7 +112,7 @@ footer {
 
 .menu-header {
   color: rebeccapurple;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .menu {
@@ -142,10 +142,14 @@ footer {
 
 .section-header {
   padding: 3px;
-  margin: 10px 0px;
+  margin: 20px 0px;
   border-radius: 5px;
   font-size: x-large;
   background-color: darkorange;
+}
+
+.item-name {
+  color: rgb(245, 215, 171);
 }
 
 .price {
@@ -170,7 +174,6 @@ footer {
 }
 
 .menu-content.location-container {
-  padding: 1.5em;
 }
 
 a {

@@ -24,6 +24,7 @@ export default function generateMenu() {
     descriptionContainer.classList.add('item-description')
 
     const itemName = document.createElement('div')
+    itemName.classList.add('item-name')
     itemName.textContent = name
 
     const itemPrice = document.createElement('span')
